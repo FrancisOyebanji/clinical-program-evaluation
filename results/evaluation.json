@@ -1,0 +1,56 @@
+{
+  "pilot_ab_test": {
+    "n_treated": 1973,
+    "n_control": 2027,
+    "a1c_change_effect": -0.383,
+    "a1c_ci95": [
+      -0.418,
+      -0.348
+    ],
+    "a1c_p_value": 3.23e-95,
+    "true_a1c_effect": -0.4,
+    "true_effect_in_ci": true,
+    "er_visit_rate_treated": 0.259,
+    "er_visit_rate_control": 0.305,
+    "er_p_value": 0.00112,
+    "mde_80pct_power": 0.054
+  },
+  "rollout_observational": {
+    "n_treated": 6094,
+    "n_matched_pairs": 6093,
+    "naive_a1c_effect": -0.481,
+    "matched_a1c_effect": -0.412,
+    "matched_ci95": [
+      -0.432,
+      -0.391
+    ],
+    "true_a1c_effect": -0.4,
+    "true_effect_in_ci": true,
+    "naive_bias": -0.081,
+    "matched_cost_effect": -627.0,
+    "true_cost_effect": -600.0,
+    "balance": {
+      "age": {
+        "smd_before": 0.291,
+        "smd_after": -0.006
+      },
+      "comorbidity_count": {
+        "smd_before": 0.244,
+        "smd_after": -0.008
+      },
+      "baseline_a1c": {
+        "smd_before": 0.466,
+        "smd_after": 0.016
+      },
+      "baseline_cost": {
+        "smd_before": 0.063,
+        "smd_after": -0.004
+      },
+      "severity": {
+        "smd_before": 0.679,
+        "smd_after": -0.0
+      }
+    },
+    "max_abs_smd_after": 0.016
+  }
+}
