@@ -1,0 +1,88 @@
+{
+  "srm_check": {
+    "n_control": 59889,
+    "n_treatment": 60111,
+    "observed_treat_share": 0.5009,
+    "chi2": 0.411,
+    "p_value": 0.522,
+    "srm_detected": false
+  },
+  "primary_metric_apply_rate": {
+    "rate_control": 0.29478,
+    "rate_treatment": 0.31528,
+    "absolute_lift": 0.0205,
+    "relative_lift_pct": 6.96,
+    "ci95": [
+      0.0153,
+      0.02571
+    ],
+    "p_value": 1.2e-14,
+    "significant": true,
+    "true_effect": 0.02,
+    "true_effect_in_ci": true
+  },
+  "cuped_applications": {
+    "theta": 0.396,
+    "corr_y_x": 0.3874,
+    "effect_unadjusted": 0.1472,
+    "se_unadjusted": 0.0079,
+    "effect_cuped": 0.146,
+    "se_cuped": 0.00728,
+    "variance_reduction_pct": 15.0,
+    "ci95_cuped": [
+      0.1317,
+      0.1602
+    ],
+    "true_effect": 0.15
+  },
+  "sequential_testing": {
+    "n_per_arm": 59889,
+    "naive_first_significant_n": 2994,
+    "always_valid_first_significant_n": 5988,
+    "note": "naive crossing earlier reflects peeking risk; always-valid boundary is conservative"
+  },
+  "power_analysis": {
+    "baseline_rate": 0.29477867388001133,
+    "n_per_arm": 59889,
+    "mde_absolute": 0.00738,
+    "mde_relative_pct": 2.5,
+    "n_per_arm_for_5pct_relative": 15022
+  },
+  "secondary_metrics_bh": {
+    "apply_rate": {
+      "p_value": 1.2e-14,
+      "bh_threshold": 0.01667,
+      "significant": true
+    },
+    "positive_outcome_rate": {
+      "p_value": 1.64e-05,
+      "bh_threshold": 0.03333,
+      "significant": true
+    },
+    "click_rate": {
+      "p_value": 0.714,
+      "bh_threshold": 0.05,
+      "significant": false
+    }
+  },
+  "heterogeneous_effects_by_experience": {
+    "entry": {
+      "effect": 0.0346,
+      "relative_lift_pct": 12.86,
+      "significant": true,
+      "n": 54154
+    },
+    "mid": {
+      "effect": 0.00822,
+      "relative_lift_pct": 2.51,
+      "significant": false,
+      "n": 48173
+    },
+    "senior": {
+      "effect": 0.00968,
+      "relative_lift_pct": 3.39,
+      "significant": false,
+      "n": 17673
+    }
+  }
+}
